@@ -6,18 +6,18 @@
     make reset
 
 3. Followinf executables will be created:
-	* load, print, query, change, clean
-* **load:**  Loads the student information from file to shared memory.
-* **print:**  Prints the current information available on shared memory.
-* **query:** Query a record in shared memory using command: `./query <studentID>`
-* **change:** Perform any modification in the student information.
-	* **Update:** Update an attribute in student info using command `./change 1 PASSWORD <studentID> <attributeNumber> <Change>`
-		* Update Name: `./change 1 PASSWORD <studentID> 1 <New Name>`
-		* Update Address: ` ./change 1 PASSWORD <studentID> 2 <New Address>`
-		* Update Telephone: ` ./change 1 PASSWORD <studentID> 3 <New Telephone>`
-	* **Delete:** Delete a student record. `./change 2 PASSWORD <studentID>`
-	* **Add:** Add a new student record. `./change 3 PASSWORD <9-digit-studentID> <Name> <Address> <Telephone>`. Pls note, for simplicity of implementation, I did not consider spaces. So *Name* and *Address* must be one word only. 
-* **clean:** Saves the current state of shared memory to a file and dumps the shared memory space and semaphores.
+load, print, query, change, clean
+	load: Loads the student information from file to shared memory.
+	print: Prints the current information available on shared memory.
+	query: Query a record in shared memory using command: `./query <studentID>`
+	change: Perform any modification in the student information.
+		Update: Update an attribute in student info using command `./change 1 PASSWORD <studentID> <attributeNumber> <Change>`
+			* Update Name: `./change 1 PASSWORD <studentID> 1 <New Name>`
+			* Update Address: ` ./change 1 PASSWORD <studentID> 2 <New Address>`
+			* Update Telephone: ` ./change 1 PASSWORD <studentID> 3 <New Telephone>`
+		Delete: Delete a student record. `./change 2 PASSWORD <studentID>`
+		Add: Add a new student record. `./change 3 PASSWORD <9-digit-studentID> <Name> <Address> <Telephone>`. Pls note, for simplicity of implementation, I did not consider spaces. So *Name* and *Address* must be one word only. 
+	clean: Saves the current state of shared memory to a file and dumps the shared memory space and semaphores.
 
 4. Run each executable in order to view or modify the records
 
